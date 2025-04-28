@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Délices D’Hono</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Les Délices D’Hono</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#produits">Produits</a>
+            <a href="#commande">Commander</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="accueil" class="hero">
+            <h2>Bienvenue chez Les Délices D’Hono</h2>
+            <div class="image-accueil">
+                <img src="image/maad.jpg" alt="Maad traditionnel du Sénégal">
+            </div>
+            <p>
+                <strong>Les Délices D’Hono</strong> vous font découvrir l’authenticité du <strong>Maad</strong>, <br>un
+                fruit local du Sénégal. Préparé avec soin, chaque pot révèle un goût doux et naturel, <br>fidèle à la
+                tradition. Idéal pour les amateurs de fruits exotiques ou pour offrir une touche de terroir.
+            </p>
+        </section>
+
+        <section id="produits">
+            <h2>Nos Produits</h2>
+            <div class="produits-container">
+
+                <div class="produit">
+                    <img src="image/maad200G.jpg" alt="maad 200g">
+                    <h3>Pot de 200g</h3>
+                    <p>1500 FCFA</p>
+                    <a href="#commande" class="btn-commander">Commander</a>
+                </div>
+
+                <div class="produit">
+                    <img src="image/pot maad.jpg" alt="maad 500g">
+                    <h3>Pot de 500g</h3>
+                    <p>5000 FCFA</p>
+                    <a href="#commande" class="btn-commander">Commander</a>
+                </div>
+
+                <div class="produit">
+                    <img src="image/Maad500ml.jpg" alt="maad 1 kilo">
+                    <h3>Pot de 1 kilo</h3>
+                    <p>10 000 FCFA</p>
+                    <a href="#commande" class="btn-commander">Commander</a>
+                </div>
+
+                <div class="produit">
+                    <img src="image/maad5kilo.jpg" alt="maad 5 kilos">
+                    <h3>Pot de 5 kilos (revendeurs)</h3>
+                    <p>50 000 FCFA</p>
+                    <a href="#commande" class="btn-commander">Commander</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="commande">
+            <h2>Commander</h2>
+            <form action="https://formspree.io/f/mwkgrzab" method="POST">
+                <label for="nom">Nom Complet :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="téléphone">Téléphone :</label>
+                <input type="tel" id="téléphone" name="téléphone" required>
+
+                <label for="produit">Produit :</label>
+                <select id="produit" name="produit" required>
+                    <option value="">Choisissez un produit</option>
+                    <option value="Maad 200g">Maad 200g - 1500 FCFA</option>
+                    <option value="Maad 500g">Maad 500g - 5000 FCFA</option>
+                    <option value="Maad 1 kilo">Maad 1 kilo - 10 000 FCFA</option>
+                    <option value="Maad 5 kilos">Maad 5 kilos - 50 000 FCFA</option>
+                </select>
+
+                <label for="quantite">Quantité :</label>
+                <input type="number" id="quantite" name="quantite" min="1" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="btn-commander">Envoyer la commande</button>
+            </form>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contactez-nous</h2>
+            <p>Retrouvez-nous, écrivez-nous ou appelez-nous!</p>
+
+            <div class="social-media">
+                <a href="https://wa.me/221781288471?text=Bonjour" target="blank">
+                    <img src="image/whatsapp.jpg" alt="WhatsApp" class="icon">
+                </a>
+                <a href="https://www.instagram.com/les_maad_hono?igsh=MXg4d3R2bGwxMWg0ZQ%3D%3D&utm_source=qr"
+                    target="_blank">
+                    <img src="image/insta.png" alt="Instagram" class="icon">
+                </a>
+                <a href="https://snapchat.com/t/WNUbEHcP" target="blank">
+                    <img src="image/snap.jpg" alt="Snaptchat" class="icon"></a>
+            </div>
+
+            <div class="contact-numbers">
+                <a href="tel:+221781288471">📞 +221 78 128 84 71</a>
+            </div>
+
+            <div class="address">
+                <p>📍 Sicap Karack, villa N385F, Dakar, Sénégal</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Les Délices D’Hono - Tous droits réservés
+    </footer>
+
+</body>
+
+</html>
